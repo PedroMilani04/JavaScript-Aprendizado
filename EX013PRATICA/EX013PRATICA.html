@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verificador de Idade</title>
+    <link rel="stylesheet" href="EX013CSS.css">
+</head>
+<body onload="carregar()" id="corpo">
+    <header>
+       <h1>  Verificador de Idade </h1>
+      <p> <a id="mens"></a></p>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento: <input type="number" name="numano" id="numano" min="0">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="radiosex" id="Masc">
+                <label for="Masc">Masculino</label>
+                <input type="radio" name="radiosex" id="Fem"> 
+                <label for="Fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Confirmar" onclick="confirmar()"> 
+            </p>
+        </div>
+        <div id="res">
+           
+        </div>
+    </section>
+    <footer>
+        <p> &copy Eu </p>
+    </footer>
+    <script src="EX013JS.js">
+
+    </script>
+</body>
+</html>

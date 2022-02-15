@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Simbolos</title>
+    <title>Operadores</title>
 </head>
 <body>
     <style>
@@ -26,13 +26,13 @@
     <script>
         var n1 = Number.parseFloat(window.prompt(`Insira o primeiro número: `))
         var n2 = Number.parseFloat(window.prompt(`Insira o segundo número: `))
-        var s = n1 + n2
+        var s = n1 + n2 // Aritmédicos 
         var s1 = n1 - n2
         var s2 = n1 * n2
         var s3 = n1 / n2
         var s4 = n1 % n2
         var s5 = n1 ** n2
-        var f = n1 > n2
+        var f = n1 > n2 // Relacionais
         var f1 = n1 < n2
         var f2 = n1 >= n2
         var f3 = n1 <= n2
@@ -40,6 +40,7 @@
         var f5 = n1 != n2
         var f6 = n1 === n2
             document.write(`<h1>${n1} e ${n2}</h1>`)
+            document.write(`<h2>Operadores Aritmédicos</h2>`)
             document.write(`A soma desses números é igual a: <strong>${s}</strong><br>`)
             document.write(`A subtração desses números é igual a: <strong>${s1}</strong><br>`)
             document.write(`A multiplicação desses números é igual a:  <strong>${s2} </strong><br>`)
@@ -49,22 +50,27 @@
             document.write(`A ordem de precedencia se da por: 1= (), **. 2= *, /, %. 3= +, -</strong><br><br>`)
             //Para ATUALIZAR a variavel com o mesmo número (n = 3 | n = n + 4, por exp.) pode-se usar (n += 4), pois tera o mesmo resultado.
             //Para INCREMENTAR ou TIRAR o valor de uma variavel em 1 (n = 3, por exp.) pode-se usar (n++) e (n--).
+            document.write(`<h2>Operadores Relacioanais</h2>`)
+            document.write(`Resposta sempre associada a um valor Booleano (True e False)`)
             document.write(`${n1} > ${n2} ? <strong>${f} </strong>| Maior Que<br>`)
             document.write(`${n1} < ${n2} ? <strong>${f1}</strong> | Menor Que<br>`)
             document.write(`${n1} >= ${n2} ? <strong>${f2} </strong>| Maior OU Igual a<br>`)
             document.write(`${n1} <+ ${n2} ? <strong>${f3} </strong>| Menor OU Igual a<br>`)
-            document.write(`${n1} == ${n2} ? <strong>${f4} </strong>| Igual a<br>`)
             document.write(`${n1} != ${n2} ? <strong>${f5}</strong> | Diferente de<br>`)
-            document.write(`${n1} === ${n2} ? <strong>${f6} </strong>| Identico a<br><br>`)
+            document.write(`${n1} == ${n2} ? <strong>${f4} </strong>| Igual a (Calcula com base no VALOR, a GRANDEZA do número, então, 5 == '5')<br>`)
+            document.write(`${n1} === ${n2} ? <strong>${f6} </strong>| Identico a (Calcula se são EXATAMENTE iguais, mesmo VALOR e TIPO, então 5 só é completamente igual a 5, 5===5)<br><br>`)
+            document.write(`n = n + 4 pode ser escrito n += 4, pois ele adiciona um valor a ele mesmo. Pode-se fazer isso com qualquer um dos sinais. Exp: n %= 4, n -= 4, etc. <br>`)
+            document.write(`Se a incrementação for de apenas 1, pode se usara n++, n-- para subtração, etc. <br><br>`)
             document.write(`<h2>Operadores Lógicos</h2>`)
             document.write(` <strong> ! </strong> = Negação/Não | True ou False <br>`)
             document.write(`<strong> && </strong> = Conjunção/E | True, False, False, False <br>`)
             document.write(`<strong> || </strong> = Disjunção/Ou | False, True, True, True <br>`)
             document.write(`ORDENS DE EXECUÇÃO: Não (!)/ E (&&)/ Ou (||)<br>`)
-            document.write(`Aritmedicos ((), **, /...) > Relacionais (>, <, <=...) > Lógicos (!, &&, ||)<br>`)
+            document.write(`(<strong>Aritmedicos (), **, /...) > Relacionais (>, <, <=...) > Lógicos (!, &&, ||)<br><br></strong>`)
             document.write(`<h2>Ternário</h2>`)
-            document.write(`TESTE <strong> ? </strong> TRUE <strong> : </strong> FALSE`)
-            document.write(`EXEMPLO: var media = 6 | media > 6? aprovado : desaprovado`)
+            document.write(`Uma operação ternária junta 3 partes, um <strong>TESTE</strong>, uma informação <strong>TRUE</strong> (O que fazer caso o teste for verdadeiro) e uma <strong>FALSE</strong> (O que fazer caso o teste seja falso)<br>`)
+            document.write(`<strong>TESTE  ?  TRUE  :  FALSE <br></strong>`)
+            document.write(`EXEMPLO: var media = 6 ( media > 6? aprovado : desaprovado! )`)
     </script>
 </body>
 </html>

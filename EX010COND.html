@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Países</h1>
+    Olá! Insira seu salário: <input type="text" name="txtcon" id="txtcon">
+    <input type="button" value="Confirmar" onclick="calcular()"><p></p>
+    <div id="res">
+        <b> Aguardando...</b> 
+     </div>
+<script>
+    function calcular() {
+        var salario = window.document.querySelector('input#txtcon')
+        var res = window.document.querySelector('div#res')
+        var sal = Number(salario.value)
+        if (sal > 7000) {
+           res.innerHTML = `<b>Seu salário passou do teto do INSS e não será resarcido em caso de eventualidades` 
+        } else {
+            res.innerHTML = `<b> Seu salário está no limite do INSS e será resarcido em caso de eventualidades`
+        }
+    }
+</script>
+</body>
+</html>
