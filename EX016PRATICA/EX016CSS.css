@@ -21,3 +21,12 @@ footer {
     text-align: center  ;
     font-style: italic;
 }
+
+select#tabuada {
+    margin-top: 10px;
+}
+
+div#b {
+    text-align: left;
+    margin-left: 70px;
+}
